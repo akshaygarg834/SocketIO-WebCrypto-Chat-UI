@@ -7,7 +7,7 @@ const EVENTS_CONSTANTS = {
 
 const options = ["Create Group", "Join Group"];
 export default {
-  socketUrl: "http://localhost:5000",
+  socketUrl: "https://em0fw.sse.codesandbox.io/",
   EVENTS_CONSTANTS,
   options
 };
