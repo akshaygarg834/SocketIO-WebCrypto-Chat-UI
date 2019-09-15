@@ -6,8 +6,11 @@ const EVENTS_CONSTANTS = {
 };
 
 const options = ["Create Group", "Join Group"];
+
+let SOCKET_URL = "https://socket-io-chat-backend.herokuapp.com/";
+window.SOCKET_URL = SOCKET_URL;
 export default {
-  socketUrl: "https://em0fw.sse.codesandbox.io/",
+  socketUrl: window.SOCKET_URL,
   EVENTS_CONSTANTS,
   options
 };

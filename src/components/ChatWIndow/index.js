@@ -82,6 +82,7 @@ class ChatWIndow extends React.Component {
 
   sendMessage = event => {
     event.preventDefault();
+    if (!this.state.currentMessage.trim()) return;
     socketUtils.sendMessage(
       this.props.socket,
       { from: this.props.whoami, value: this.state.currentMessage },
@@ -130,12 +131,14 @@ class ChatWIndow extends React.Component {
             <form noValidate onSubmit={this.sendMessage}>
               <FormControl fullWidth>
                 <Input
-                  id="current-messgaed"
+                  id="current-message"
                   type={"text"}
                   fullWidth
+                  autoFocus
                   placeholder="Type a Message"
                   value={this.state.currentMessage}
                   onChange={this.onMessageChange}
+                  // multiline
                   endAdornment={
                     <InputAdornment position="end">
                       <IconButton
