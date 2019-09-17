@@ -38,7 +38,7 @@ const styles = theme => ({
     margin: theme.spacing(1)
   }
 });
-
+//WTF
 const Message = props => {
   const message = props.message;
   const classes = props.classes;
