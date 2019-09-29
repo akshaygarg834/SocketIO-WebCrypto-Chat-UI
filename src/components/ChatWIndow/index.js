@@ -135,7 +135,7 @@ class ChatWIndow extends React.Component {
                   type={"text"}
                   fullWidth
                   autoFocus
-                  placeholder="Type a Message"
+                  placeholder="Message"
                   value={this.state.currentMessage}
                   onChange={this.onMessageChange}
                   // multiline
