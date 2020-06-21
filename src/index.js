@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "typeface-roboto";
+// import "./styles.css";
 import App from "./worthy";
 import * as serviceWorker from "./serviceWorker";
 
@@ -11,6 +12,5 @@ ReactDOM.render(<App />, document.getElementById("root"));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // if (process.env.NODE_ENV === "production") serviceWorker.register();
 // else serviceWorker.unregister();
-
 
 serviceWorker.unregister();

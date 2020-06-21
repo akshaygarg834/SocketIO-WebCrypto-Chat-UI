@@ -1,4 +1,14 @@
-.App {
+/* .App {
   font-family: sans-serif;
   text-align: center;
+} */
+
+body {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
